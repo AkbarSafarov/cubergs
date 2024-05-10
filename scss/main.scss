@@ -819,6 +819,16 @@ img, textarea, input, table {
     }
 }
 
+
+@keyframes changeColor {
+    0%, 100% {
+        background: #ff8311;
+    }
+    50% {
+        background: #7392ff;
+    }
+}
+
 .top_block_wr {
     position: relative;
     padding: 205px 16px;
@@ -832,7 +842,7 @@ img, textarea, input, table {
     }
 
     .bg {
-        background-image: url(../img/bg.jpg);
+        background-color: #fff;
         background-position: 50%;
         background-repeat: no-repeat;
         background-size: cover;
@@ -841,6 +851,145 @@ img, textarea, input, table {
         bottom: 0;
         left: 0;
         right: 0;
+        overflow: hidden;
+
+        .elip {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(200px);
+        }
+
+        @media all and (max-width: 1024px){
+            background: url(../img/bg.jpg) 50% no-repeat;
+
+            .elip {
+                display: none;
+            }
+        }
+
+        .elip1 {
+            width: 672px;
+            height: 672px;
+            background: #ff8311;
+
+            &.pos1 {
+                top: -122px;
+                left: 265px;
+            }
+
+            &.pos2 {
+                top: 645px;
+                left: 67px;
+            }
+
+            &.pos3 {
+                bottom: -400px;
+                right: 206px;
+            } 
+
+            &.pos4 {
+                top: -37px;
+                right: -99px;
+            }
+
+            &.pos5 {
+                top: -80px;
+                left: 271px;
+            }
+        }
+        
+        .elip2 {
+            width: 542px;
+            height: 542px;
+            background: #7392ff;
+
+            &.pos1 {
+                bottom: -256px;
+                left: 148px;
+            }
+
+            &.pos2 {
+                bottom: -400px;
+                left: 946px;
+            }
+
+            &.pos3 {
+                top: 77px;
+                right: -300px;
+            } 
+
+            &.pos4 {
+                top: -300px;
+                left: 271px;
+            }
+
+            &.pos5 {
+                bottom: -296px;
+                left: 154px;
+            }
+        }
+
+        .elip3 {
+            width: 538px;
+            height: 538px;
+            background: #ff8311;
+
+            &.pos1 {
+                bottom: -143px;
+                right: -35px;
+            }
+
+            &.pos2 {
+                top: -113px;
+                right: -62px;
+            }
+
+            &.pos3 {
+                top: -356px;
+                left: 310px;
+            } 
+
+            &.pos4 {
+                bottom: -247px;
+                left: 104px;
+            }
+
+            &.pos5 {
+                bottom: -184px;
+                right: 41px;
+            }
+        }
+
+        .elip4 {
+            width: 542px;
+            height: 542px;
+            background: #7392ff;      
+
+            &.pos1 {
+                top: -143px;
+                right: -35px;
+            }
+
+            &.pos2 {
+                top: -352px;
+                left: 371px;
+            }
+
+            &.pos3 {
+                bottom: 28px;
+                left: -136px;
+            } 
+
+            &.pos4 {
+                bottom: -400px;
+                right: 164px;
+            }
+
+            &.pos5 {
+                top: -72px;
+                right: -74px;
+            }    
+        }
     }
 
     .block_inner {
