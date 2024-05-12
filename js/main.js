@@ -21,17 +21,4 @@ $(function(){
     animatePositions();
 });
 
-// function randomValue(min, max) {
-//         return Math.random() * (max - min) + min;
-//     }
-
-//     function moveElip() {
-//         const elips = document.querySelectorAll('.elip');
-//         elips.forEach(elip => {
-//             elip.style.top = randomValue(-100, 100) + 'px';
-//             elip.style.left = randomValue(-100, 100) + 'px';
-//         });
-//     }
-
-//     setInterval(moveElip, 5000); 
 
