@@ -7,7 +7,7 @@ $(function(){
     });
 
     function animatePositions() {
-        var positions = ["pos1", "pos2", "pos3", "pos4", "pos5"];
+        var positions = ["pos1", "pos2", "pos3", "pos4"];
         var currentPosIndex = 0;
 
         setInterval(function() {
@@ -21,5 +21,17 @@ $(function(){
     animatePositions();
 });
 
+// function randomValue(min, max) {
+//         return Math.random() * (max - min) + min;
+//     }
 
+//     function moveElip() {
+//         const elips = document.querySelectorAll('.elip');
+//         elips.forEach(elip => {
+//             elip.style.top = randomValue(-100, 100) + 'px';
+//             elip.style.left = randomValue(-100, 100) + 'px';
+//         });
+//     }
+
+//     setInterval(moveElip, 5000); 
 
